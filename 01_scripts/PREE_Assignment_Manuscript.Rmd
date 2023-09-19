@@ -1,0 +1,28 @@
+---
+title: "PREE_Assignment"
+author: "Andres Mancera Barreto"
+date: "2023-09-19"
+output: pdf_document
+---
+
+## Title
+
+### Abstract
+
+### Introduction
+
+### Methods
+
+### Results
+
+### Discussion
+
+### Reference
+
+### Tables
+
+### Figure captions
+
+### Figures
+
+### Appendices
