@@ -3,6 +3,7 @@ title: "PREE_Assignment"
 author: "Andres Mancera Barreto"
 date: "2023-09-19"
 output: pdf_document
+bibliography: references.bib
 ---
 
 ## Title
@@ -11,13 +12,15 @@ output: pdf_document
 
 ### Introduction
 
+There are several efforts to study biodiversity and the effects of climate change in both patch and diversity indexes [@cahill2013; @carey2003; @harvey2023].
+
 ### Methods
 
 ### Results
 
 ### Discussion
 
-### Reference
+### References
 
 ### Tables
 
