@@ -3,8 +3,16 @@ title: "PREE_Assignment"
 author: "Andres Mancera Barreto"
 date: "2023-09-19"
 output: pdf_document
-bibliography: references.bib
+bibliography: ["references.bib", "grateful-refs.bib"]
+csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/ecological-entomology.csl"
 ---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+library(grateful)
+```
+
 
 ## Title
 
@@ -21,6 +29,10 @@ There are several efforts to study biodiversity and the effects of climate chang
 ### Discussion
 
 ### References
+
+```{r}
+cite_packages(output = "paragraph", out.dir = getwd())
+```
 
 ### Tables
 
