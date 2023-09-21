@@ -1,0 +1,16 @@
+# For the "pinwing.tidy" dataset:
+
+island = a factor denoting island in Palmer Archipelago, Antarctica (Biscoe, Dream or Torgersen)
+
+species = a factor denoting penguin species (Adélie, Chinstrap and Gentoo)
+
+n = a number denoting the amount of individuals found of each species per island.
+
+# For the "spp.table" dataset:
+
+species = a factor denoting penguin species (Adélie, Chinstrap and Gentoo)
+
+n = a number denoting the amount of individuals found of each species in total.
+
+relative_fequency = a number denoting the proportion of each species in relation to the total
+in the dataframe
