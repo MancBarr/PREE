@@ -96,6 +96,15 @@ write_csv(wing.table,"./03_figures/wing.table.csv")
 
 kable(wing.table) #We will copy and paste this into the manuscript as a result.
 
+## Table should look something like this: 
+
+##  |island    | Adelie| Chinstrap| Gentoo| Total|
+##  |:---------|------:|---------:|------:|-----:|
+##  |Biscoe    |     44|         0|    124|   168|
+##  |Dream     |     56|        68|      0|   124|
+##  |Torgersen |     52|         0|      0|    52|
+## |Total     |    152|        68|    124|   344|
+
 ## Conducting a chi squared test for the hypothesis:
 
 wings.chisq.results <- pinwings %>%  #We'll stored the results in an object
@@ -105,8 +114,17 @@ wings.chisq.results <- pinwings %>%  #We'll stored the results in an object
 
 wings.chisq.results  #and see the results
 
-kable(wings.chisq.results$expected) #lastly calling the table to ensure we have 
-                                    #not violated assumptions which we did not.
+kable(wings.chisq.results$expected) #lastly calling the table to ensure we have                                     #not violated assumptions which we did not.
+
+## Table should look like this:
+
+##  |          |island    |   Adelie| Chinstrap|   Gentoo|
+##  |:---------|:---------|--------:|---------:|--------:|
+##  |Biscoe    |Biscoe    | 74.23256|  33.20930| 60.55814|
+##  |Dream     |Dream     | 54.79070|  24.51163| 44.69767|
+##  |Torgersen |Torgersen | 22.97674|  10.27907| 18.74419|
+  
+## So assumptions not violated
 
 ## FIN
 
