@@ -7,7 +7,7 @@ bibliography: ["references.bib", "grateful-refs.bib"]
 csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/ecological-entomology.csl"
 ---
 
-```{r}
+```{r, include=FALSE}
 library(tidyverse)
 library(palmerpenguins)
 library(grateful)
@@ -26,13 +26,16 @@ There are several efforts to study biodiversity and the effects of climate chang
 
 ### Results
 
+
+|island    | Adelie| Chinstrap| Gentoo| Total|
+|:---------|------:|---------:|------:|-----:|
+|Biscoe    |     44|         0|    124|   168|
+|Dream     |     56|        68|      0|   124|
+|Torgersen |     52|         0|      0|    52|
+|Total     |    152|        68|    124|   344|
+
+
 ### Discussion
-
-### References
-
-```{r}
-cite_packages(output = "paragraph", out.dir = getwd())
-```
 
 ### Tables
 
@@ -40,4 +43,12 @@ cite_packages(output = "paragraph", out.dir = getwd())
 
 ### Figures
 
+
+
 ### Appendices
+
+### References
+
+```{r, include=FALSE}
+cite_packages(output = "paragraph", out.dir = getwd())
+```
