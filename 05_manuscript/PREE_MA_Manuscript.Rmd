@@ -2,8 +2,13 @@
 title: "PREE_Assignment"
 author: "Andres Mancera Barreto"
 date: "2023-09-19"
-output: pdf_document
-bibliography: ["references.bib", "grateful-refs.bib"]
+output:
+  word_document: default
+  html_document:
+    df_print: paged
+bibliography:
+- references.bib
+- "grateful-refs.bib"
 csl: "https://raw.githubusercontent.com/citation-style-language/styles/master/ecological-entomology.csl"
 ---
 
