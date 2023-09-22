@@ -21,43 +21,41 @@ library(grateful)
 
 ## Title
 
-### The islanders: a mock analysis on penguin distribution in three different islands.
+### The islanders: a mock analysis of penguin distribution in three different islands.
 
 ### Abstract
 
-What can I say. There is available data of penguins in R that is not mine but is free to use. There is an assignment about data reproducibility that requires you to copy what I have done. This is me trying to accomplish that and not destroy my chances of graduating in the process. I hope it works.
+What can I say? There is available data on penguins in R that is not mine but is free to use. An assignment about data reproducibility requires you to copy what I have done. I am trying to accomplish that and not destroy my chances of graduating. I hope it works.
 
 ### Introduction
 
-You know how introductions go. Start kind of broad on the topic, then narrow down without pushing it too much. Insert claims from others that help support your thesis [@cahill2013; @carey2003; @harvey2023]. Then repeat it but make it more specific and add more citations.
+You know how introductions go. Start broad on the topic, then narrow it down without pushing it too much. Insert claims from others that help support your thesis [@cahill2013; @carey2003; @harvey2023]. Then repeat it, make it more specific, and add more citations [@acuña-tarazona2022; @barlow2020; @baker2006].
 
-Lastly finish it with an statement on the purpose of the paper and study, which in this case is to create a repository and a reproducible research that you can, hopefully, repeat. Related to the data, our hypothesis is that there is a higher probability of finding one penguin species in relation with the island where we are surveying.
+Lastly, finish it with a statement on the purpose of the paper and study, which in this case is to create a repository and reproducible research that you can, hopefully, repeat. Related to the data, we hypothesize that there is a higher probability of finding one penguin species on the island where we are surveying.
 
 ### Methods
 
-Using data available in the *palmerpenguins* package in R, we extracted the data to two separate CSV files and stored them in a *rawdata* folder. From these data frames the one named "penguins" was selected to so some data manipulation, result production and storage.
+Using data in the *Palmer Penguins* package in R, we extracted the data to two separate CSV files and stored them in a *data* folder. The one named "penguins" was selected from these data frames to do some data manipulation, result production and storage.
 
-Firstly, we created a frequency table that showed us the relative frequency of each species of penguins that was scouted and studied in the Palmer research station. This was done to create a plot and store the data created in a different folder named *tidydata*.
+Firstly, we created a frequency table that showed us the relative frequency of each species of penguin that was scouted and studied at the Palmer research station. This was done to create a plot and store the data in a tidy data folder.
 
 The barplot for the proportion of penguins was created using the function *geom_bar* from the *ggplot* package.
 
-We (I guess I am not used to the I) proceed to do a contingency table for the penguins found per island and stored it in the same *tidydata* folder. From this data, another barplot was created similarly to the one above.
+We (I guess I am not used to the I) proceeded to do a contingency table for the penguins found per island and store it in the same *tidy data* folder. From this data, another barplot was created similarly to the one above.
 
-The first part of this is totally redundant. I'm just not very smart, so yeah... also, too lazy to erase it, but apparently not enough to write about it? even though that would have been faster and easier?
+The first part of this is redundant. I'm just not very smart, so yeah.... also, I'm too lazy to erase it, but not enough to write about it. Even though that would have been faster and easier?
 
-Another contingency table was produce from the penguins data to ensure that we did not violated assumptions for a $\chi^{2}$ contingency test and stored in the *figures* directory as a result.
-
-Lastly, a $\chi^{2}$ contingency test was done using the *chisq.test* function from the *janitor* package. That's it.
+Another contingency table was produced from the penguin's data to ensure that we did not violate assumptions for a $\chi^{2}$ contingency test, and stored in the figures directorially, a $\chi^{2}$ contingency test was done using the *chisq.test* function from the *janitor* package. That's it.
 
 ### Results
 
-Here be mine results.
+Here are my results.
 
-![Species frequency in the penguins dataset.](images/frequency_bar.png)
+![Species frequency in the penguin's dataset.](images/frequency_bar.png)
 
-It appears that Adelie pinguins are the most abundant in the dataset. Now let's see if there are differences among islands:
+It appears that Adelie penguins are the most abundant in the dataset. Now let's see if there are differences among islands:
 
-Table 1: Individuals count per island that are part of the "palmerpenguins" package.
+Table 1: Individuals count per island in the "palmerpenguins" package.
 
 | island    | Adelie | Chinstrap | Gentoo | Total |
 |:----------|-------:|----------:|-------:|------:|
@@ -66,21 +64,25 @@ Table 1: Individuals count per island that are part of the "palmerpenguins" pack
 | Torgersen |     52 |         0 |      0 |    52 |
 | Total     |    152 |        68 |    124 |   344 |
 
-and in a graph:
+And in a graph:
 
 ![Species distribution across islands in the 'palmerpenguins' package.](images/island-penguin-02.png){width="508"}
 
-We did not violated any assumptions for the $\chi^{2}$ test, so we can say that the probability of being finding one penguin species is significantly associated with the island where we are surveying ($\chi^{2}$ contingency test; *df* = 4; $\chi^{2}$ = 299.55; *P* \< 0.001). Based on our bar plot (Fig. 2), the distribution of penguins is vastly different among islands.
+We did not violate any assumptions for the $\chi^{2}$ test, so we can say that the probability of finding one penguin species is significantly associated with the island where we are surveying ($\chi^{2}$ contingency test; *df* = 4; $\chi^{2}$ = 299.55; *P* \< 0.001). Based on our bar plot (Fig. 2), the distribution of penguins is vastly different among islands.
 
 Cheers.
 
 ### Discussion
 
-We, indeed did found that penguin species is related to the island where they are surveyed. Shocking. I do not know what else to say, mate. *Torgersen* are everywhere, and both *Dream* and *Biscoe* are locked to particular islands. Neat.
+We found that penguin species are related to the island where they are surveyed. Shocking. I do not know what else to say, mate. *Torgersen* is everywhere, and *Dream* and *Biscoe* are locked to particular islands. Neat.
+
+As in any discussion, you also need to include some citation that supports your take and data [@anderson1984; @alvarez2002], so that there is a background and connection to similar studies [@boff2015]. In this case, as through the entire documents, all the references are non-related and only included as an exercise. None of the people here referenced have said anything remote similar to what I am quoting [@anderson1984; @alvarez2002, @boff2015 @cahill2013; @carey2003; @harvey2023, @acuña-tarazona2022; @barlow2020; @baker2006].
+
+Then, you finish with a bombastic statement or suggestions for future studies. Probably something someone in your lab is already working on, creating a nice circular experience of knowledge in the lab.
 
 ### Tables
 
-Table 1: Individuals count per island that are part of the "palmerpenguins" package.
+Table 1: Individuals count per island in the "palmerpenguins" package.
 
 | island    | Adelie | Chinstrap | Gentoo | Total |
 |:----------|-------:|----------:|-------:|------:|
@@ -91,7 +93,7 @@ Table 1: Individuals count per island that are part of the "palmerpenguins" pack
 
 ### Figure captions
 
-Fig. 1: Species frequency in the penguins dataset.
+Fig. 1: Species frequency in the penguin's dataset.
 
 Fig. 2: Species distribution across islands in the 'palmerpenguins' package.
 
@@ -109,7 +111,7 @@ Fig. 2: Species distribution across islands in the 'palmerpenguins' package.
 
 ### Appendices
 
-See the PREE.R script for how this was done?
+See the PREE.R script for how this was done.
 
 ### References
 
