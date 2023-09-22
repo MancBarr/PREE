@@ -53,7 +53,7 @@ Lastly, a $\chi^{2}$ contingency test was done using the *chisq.test* function f
 
 Here be mine results.
 
-![Fig. 1: Species frequency in the penguins dataset.](images/frequency_bar.png)
+![Species frequency in the penguins dataset.](images/frequency_bar.png)
 
 It appears that Adelie pinguins are the most abundant in the dataset. Now let's see if there are differences among islands:
 
@@ -68,7 +68,7 @@ Table 1: Individuals count per island that are part of the "palmerpenguins" pack
 
 and in a graph:
 
-![Fig. 2: Species distribution across islands in the 'palmerpenguins' package.](images/island-penguin-02.png){width="508"}
+![Species distribution across islands in the 'palmerpenguins' package.](images/island-penguin-02.png){width="508"}
 
 We did not violated any assumptions for the $\chi^{2}$ test, so we can say that the probability of being finding one penguin species is significantly associated with the island where we are surveying ($\chi^{2}$ contingency test; *df* = 4; $\chi^{2}$ = 299.55; *P* \< 0.001). Based on our bar plot (Fig. 2), the distribution of penguins is vastly different among islands.
 
@@ -97,9 +97,15 @@ Fig. 2: Species distribution across islands in the 'palmerpenguins' package.
 
 ### Figures
 
-![Fig. 1: Species frequency in the penguins dataset.](images/frequency_bar.png)
+\newpage
 
-![Fig. 2: Species distribution across islands in the 'palmerpenguins' package.](images/island-penguin-02.png)
+![](images/frequency_bar.png)
+
+\newpage
+
+![](images/island-penguin-02.png)
+
+\newpage
 
 ### Appendices
 
@@ -107,6 +113,6 @@ See the PREE.R script for how this was done?
 
 ### References
 
-```{r}
+```{r echo=FALSE}
 cite_packages(output = "paragraph", out.dir = getwd())
 ```
