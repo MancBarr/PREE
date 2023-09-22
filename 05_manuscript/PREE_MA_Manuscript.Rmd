@@ -3,9 +3,10 @@ title: "PREE_Assignment"
 author: "Andres Mancera Barreto"
 date: "2023-09-19"
 output:
-  word_document: default
+  pdf_document: default
   html_document:
     df_print: paged
+  word_document: default
 bibliography:
 - references.bib
 - "grateful-refs.bib"
@@ -28,7 +29,7 @@ What can I say. There is available data of penguins in R that is not mine but is
 
 ### Introduction
 
-You know how introductions go. Start kind of broad on the topic, then narrow down without pushing it too much. Insert claims from others that help support your thesis [@cahill2013; @carey2003; @harvey2023]. Then repeat it but make it more specific and add more citations ().
+You know how introductions go. Start kind of broad on the topic, then narrow down without pushing it too much. Insert claims from others that help support your thesis [@cahill2013; @carey2003; @harvey2023]. Then repeat it but make it more specific and add more citations.
 
 Lastly finish it with an statement on the purpose of the paper and study, which in this case is to create a repository and a reproducible research that you can, hopefully, repeat. Related to the data, our hypothesis is that there is a higher probability of finding one penguin species in relation with the island where we are surveying.
 
@@ -98,7 +99,7 @@ Fig. 2: Species distribution across islands in the 'palmerpenguins' package.
 
 ![Fig. 1: Species frequency in the penguins dataset.](images/frequency_bar.png)
 
-![]()
+![Fig. 2: Species distribution across islands in the 'palmerpenguins' package.](images/island-penguin-02.png)
 
 ### Appendices
 
@@ -106,6 +107,6 @@ See the PREE.R script for how this was done?
 
 ### References
 
-```{r, include=FALSE}
+```{r}
 cite_packages(output = "paragraph", out.dir = getwd())
 ```
