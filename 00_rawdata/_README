@@ -1,0 +1,9 @@
+00_rawdata readme:
+
+  Main directory for the data storage extracted from the "penguinspalmer" package
+  in R that will be used for this project. This data is not to be edited.
+          a. penguins.csv: Extracted database that contains the values in the 
+          dataframe of same name in the package
+          b. penguins_raw.csv: Extracted data base as above
+          
+        

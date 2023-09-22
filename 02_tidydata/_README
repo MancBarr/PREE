@@ -1,5 +1,16 @@
+
+Created: 2022/09/20
+
+Created by: Andres Mancera Barreto
+
+Last updated: 2023/09/22
+
 This directory contains the data that was created during the procedure
 and analyses done on the penguin data.
+
+Data was produced with the objective to excersice basic procedures in R that
+are reproducible. To see how data was created, please refer to the PREE.R 
+file in the 01_scripts directory.
 
 It is meant to be maleable and it is stored separately to prevent confusion
 and follow best practices.
