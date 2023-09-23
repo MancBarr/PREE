@@ -1,5 +1,12 @@
 00_rawdata readme:
 
+Created: 2022/09/20
+
+Created by: Andres Mancera Barreto
+
+Last updated: 2023/09/22
+
+
   Main directory for the data storage extracted from the "penguinspalmer" package
   in R that will be used for this project. This data is not to be edited.
           a. penguins.csv: Extracted database that contains the values in the 

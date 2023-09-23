@@ -1,3 +1,9 @@
+Created: 2022/09/20
+
+Created by: Andres Mancera Barreto
+
+Last updated: 2023/09/22
+
 # For the "pinwing.tidy" dataset:
 
 island = a factor denoting island in Palmer Archipelago, Antarctica (Biscoe, Dream or Torgersen)

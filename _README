@@ -1,4 +1,10 @@
 
+Created: 2022/09/20
+
+Created by: Andres Mancera Barreto
+
+Last updated: 2023/09/22
+
 Main README file for the Repository for the Productivity and Reproducibility in 
 Ecology and Evolution mini-assignment.
 
@@ -26,6 +32,13 @@ PREE:
       3. 02_tidydata: Directory where data that is created through the procedure will be stored.
           This data is to be maleable and used for result production and exploration.
       4. 03_figures: Directory where the figures, tables and similar will be stored.
-      5. renv: Directory that contains the necessary information to replicate the 
+      5. 04_preregistration: Directory containing the necessary information and scripts for the
+          preregistration of the project.
+      6. 05_manuscript: directory containing the pertinent information associated with the 
+          manuscript produced from the process done.
+      7. renv: Directory that contains the necessary information to replicate the 
           R environment in which this project was done.
   - Wiki_PREE: A dictionary of therms for the PREE project.
+  
+  File names where assigned to ease the finding of the project, the intituitive localization of 
+  data as well as the organization of different parts of the project

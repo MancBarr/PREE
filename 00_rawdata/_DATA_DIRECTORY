@@ -1,7 +1,12 @@
+Created: 2022/09/20
+
+Created by: Andres Mancera Barreto
+
+Last updated: 2023/09/22
 
 # For "penguins" dataframe:
 
-## Variables explanations extracted from: https://allisonhorst.github.io/palmerpenguins/reference/penguins.html
+## Variables explanations extracted from and collected by: https://allisonhorst.github.io/palmerpenguins/reference/penguins.html
 
 species = a factor denoting penguin species (Adélie, Chinstrap and Gentoo)
 
@@ -23,7 +28,7 @@ year = an integer denoting the study year (2007, 2008, or 2009)
 
 # For "penguins_raw" dataframe:
 
-## Variables explanations extracted from:https://allisonhorst.github.io/palmerpenguins/reference/penguins_raw.html
+## Variables explanations extracted from and collected by:https://allisonhorst.github.io/palmerpenguins/reference/penguins_raw.html
 
 studyName = Sampling expedition from which data were collected, generated, etc.
 
